@@ -1,8 +1,8 @@
-import {mapStateToProps, mapDispatchToProps} from '../../../src/containers/AppPage'
+import {mapStateToProps, mapDispatchToProps} from '../../../src/containers/ModalPage'
 import { initialState } from '../../../src/reducers/modal'
 
 describe('Containers', () => {
-  test('should map AppPage state to props', () => {
+  test('should map ModalPage state to props', () => {
     const state = {
       modal: initialState()
     }
@@ -10,7 +10,7 @@ describe('Containers', () => {
     expect(mapStateToProps(state)).toMatchSnapshot()
   })
 
-  test('should map AppPage actions to props', () => {
+  test('should map ModalPage actions to props', () => {
     expect(mapDispatchToProps()).toMatchSnapshot()
   })
 })

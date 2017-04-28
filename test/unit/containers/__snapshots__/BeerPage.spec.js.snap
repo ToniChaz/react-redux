@@ -1,4 +1,4 @@
-exports[`Containers should map modal actions to props 1`] = `
+exports[`Containers should map BeerPage actions to props 1`] = `
 Object {
   "addBeer": [Function],
   "addBeerSuccess": [Function],
@@ -12,11 +12,15 @@ Object {
 }
 `;
 
-exports[`Containers should map modal state to props 1`] = `
+exports[`Containers should map BeerPage state to props 1`] = `
 Object {
+  "beer": Object {},
+  "beerList": Array [],
   "body": "",
   "callback": null,
+  "error": null,
   "extraParams": Object {},
+  "loading": false,
   "open": false,
   "title": "",
 }

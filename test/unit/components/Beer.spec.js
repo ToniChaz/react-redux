@@ -3,6 +3,7 @@ import React from 'react'
 import renderer from 'react-test-renderer'
 
 import Beer from '../../../src/components/Beer'
+import mockData from '../../mockData'
 
 describe('Beer component', () => {
   test('render Beer component without crashing', () => {
@@ -18,11 +19,7 @@ describe('Beer component', () => {
   })
 
   test('render Beer component with beers', () => {
-    const beerList = [
-      {name:'Amstel',graduation:'5',id: 'beer_01'},
-      {name:'Mahoo',graduation:'3',id: 'beer_02'},
-      {name:'Corona',graduation:'4,5',id: 'beer_03'}
-    ]
+    const beerList = mockData.beers
     const loading = false
     const error = null
     const fetchBeer = jest.fn()

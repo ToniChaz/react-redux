@@ -1,4 +1,4 @@
-exports[`Containers should map modal actions to props 1`] = `
+exports[`Containers should map AppPage actions to props 1`] = `
 Object {
   "modalAction": Object {
     "closeModal": [Function],
@@ -7,7 +7,7 @@ Object {
 }
 `;
 
-exports[`Containers should map modal state to props 1`] = `
+exports[`Containers should map AppPage state to props 1`] = `
 Object {
   "modal": Object {
     "body": "",

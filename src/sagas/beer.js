@@ -31,10 +31,10 @@ export function * watchAddBeer () {
   yield takeEvery(beerActionTypes.ADD_BEER, addBeer)
 }
 
-export function * removeBeer (beer) {
+export function * removeBeer (beerId) {
   try {
-    yield call(removeBeerService, beer)
-    yield put(beerActions.removeBeerSuccess(beer))
+    yield call(removeBeerService, beerId)
+    yield put(beerActions.removeBeerSuccess(beerId))
   } catch (error) {
     yield put(beerActions.beerError(error))
   }
