@@ -1,11 +1,13 @@
 import modalAction from '../constants/actions/modal'
 
-const initialState = {
-  open: false,
-  title: '',
-  body: '',
-  callback: null,
-  extraParams: {}
+export function initialState () {
+  return {
+    open: false,
+    title: '',
+    body: '',
+    callback: null,
+    extraParams: {}
+  }
 }
 
 function openModal(state, {modalData}) {
@@ -31,7 +33,7 @@ function closeModal(state) {
   }
 }
 
-export default function (state = initialState, action) {
+export default function (state = initialState(), action) {
   switch (action.type) {
     case modalAction.OPEN_MODAL:
       return openModal(state, action)

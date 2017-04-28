@@ -1,10 +1,12 @@
 import beerAction from '../constants/actions/beer'
 
-const initialState = {
-  beerList: [],
-  beer: {},
-  loading: false,
-  error: null
+export function initialState () {
+  return {
+    beerList: [],
+    beer: {},
+    loading: false,
+    error: null
+  }
 }
 
 function fetchBeer(state) {
@@ -67,7 +69,7 @@ function beerError(state, {error}) {
   }
 }
 
-export default function (state = initialState, action) {
+export default function (state = initialState(), action) {
   switch (action.type) {
     case beerAction.FETCH_BEER:
       return fetchBeer(state, action)

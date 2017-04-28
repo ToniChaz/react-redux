@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 class BeerItem extends Component {
   render() {
     const {beer, onRemove} = this.props
-    let btnText = this.props.loading ? 'Loading...' : 'Remove Beer'
+    const btnText = this.props.loading ? 'Loading...' : 'Remove Beer'
 
     return (
       <div>

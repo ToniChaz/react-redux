@@ -4,7 +4,7 @@ import BeerList from "./BeerList"
 import "./Beer.css"
 
 class Beer extends Component {
-  constructor (props){
+  constructor(props) {
     super(props)
 
     this.onRemove = this.onRemove.bind(this)
@@ -34,9 +34,9 @@ class Beer extends Component {
 
         <BeerForm addBeer={this.props.addBeer} loading={loading}/>
         {error && <p className="beer-error"> An beer error occurred: {error.statusText}: {error.status}</p>}
-        {beerList.length ? <BeerList beerList={beerList} removeBeer={this.onRemove} loading={loading}/> :
-          <p>The beer list is empty</p>}
-
+        {beerList.length
+          ? <BeerList beerList={beerList} removeBeer={this.onRemove} loading={loading}/>
+          : <p>The beer list is empty</p>}
       </div>
     )
   }

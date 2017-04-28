@@ -8,7 +8,7 @@ class BeerForm extends Component {
   }
 
   render () {
-    let btnText = this.props.loading ? 'Loading...' : 'Add Beer'
+    const btnText = this.props.loading ? 'Loading...' : 'Add Beer'
 
     return (
       <div>

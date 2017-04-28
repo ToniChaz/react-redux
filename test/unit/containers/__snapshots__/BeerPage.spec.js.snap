@@ -1,0 +1,23 @@
+exports[`Containers should map modal actions to props 1`] = `
+Object {
+  "addBeer": [Function],
+  "addBeerSuccess": [Function],
+  "beerError": [Function],
+  "closeModal": [Function],
+  "fetchBeer": [Function],
+  "fetchBeerSuccess": [Function],
+  "openModal": [Function],
+  "removeBeer": [Function],
+  "removeBeerSuccess": [Function],
+}
+`;
+
+exports[`Containers should map modal state to props 1`] = `
+Object {
+  "body": "",
+  "callback": null,
+  "extraParams": Object {},
+  "open": false,
+  "title": "",
+}
+`;

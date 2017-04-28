@@ -10,7 +10,7 @@ export function mapStateToProps (state) {
 }
 
 export function mapDispatchToProps (dispatch) {
-  return bindActionCreators(Object.assign({}, beerActions, modalActions), dispatch)
+  return bindActionCreators({...beerActions, ...modalActions}, dispatch)
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Beer)
