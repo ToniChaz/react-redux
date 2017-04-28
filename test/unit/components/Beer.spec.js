@@ -3,7 +3,7 @@ import React from 'react'
 import renderer from 'react-test-renderer'
 
 import Beer from '../../../src/components/Beer'
-import mockData from '../../mockData'
+import mockData from '../mockData'
 
 describe('Beer component', () => {
   test('render Beer component without crashing', () => {

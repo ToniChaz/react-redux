@@ -8,7 +8,7 @@ exports[`App component render App component without crashing 1`] = `
       className="app-logo"
       src="logo.svg" />
     <h2>
-      Welcome to React
+      Welcome to BeersApp
     </h2>
   </div>
   <nav>

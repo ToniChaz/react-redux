@@ -22,7 +22,7 @@ class App extends Component {
         {this.props.modal.open && <ModalPage />}
         <div className="app-header">
           <img src={logo} className="app-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+          <h2>Welcome to BeersApp</h2>
         </div>
         <nav>
           <ul>

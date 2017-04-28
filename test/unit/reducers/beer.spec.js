@@ -2,7 +2,7 @@
 import beerAction from '../../../src/actions/beer'
 import beerReducer from '../../../src/reducers/beer'
 import { initialState } from '../../../src/reducers/beer'
-import mockData from '../../mockData'
+import mockData from '../mockData'
 
 describe('Beer reducer', () => {
 

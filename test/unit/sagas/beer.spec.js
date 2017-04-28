@@ -5,7 +5,7 @@ import {
   watchRemoveBeer, removeBeer
 } from '../../../src/sagas/beer'
 
-import mockData from '../../mockData'
+import mockData from '../mockData'
 
 describe('Beer saga', () => {
   test('should trigger on every BEER_FETCH action', () => {
