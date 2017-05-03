@@ -71,6 +71,15 @@ const fakeServer = () => {
           res.send(response)
         }
       })
+    },
+    fakeRemoveBeerResponse(beerId) {
+      this.fakeResponse({
+        method: 'delete',
+        path: `/api/beers/${beerId}`,
+        middleware: (req, res) => {
+          res.sendStatus(204)
+        }
+      })
     }
   }
 }

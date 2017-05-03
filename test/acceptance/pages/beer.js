@@ -5,7 +5,7 @@ export function fillInput (field, value) {
   browser.setValue(field, value)
 }
 
-export function clickOnbutton (name) {
+export function clickOnΒutton (name) {
   browser.waitForEnabled(name)
   browser.click(name)
 }

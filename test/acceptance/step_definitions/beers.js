@@ -1,12 +1,11 @@
 // beers.js
 import { expect } from 'chai'
-import { fillInput, clickOnbutton } from '../pages/beer'
+import { fillInput, clickOnΒutton } from '../pages/beer'
 
 
 export default function () {
   this.When(/^user is on the Beers screen$/, () => {
     this.world.server.fakeFetchBeerResponse()
-    this.world.server.fakeAddBeerResponse()
     browser.url('/beers')
   })
 
@@ -23,7 +22,17 @@ export default function () {
 
 
   this.When(/^the user send the form$/, () => {
-    clickOnbutton('[type=submit]')
+    this.world.server.fakeAddBeerResponse()
+    clickOnΒutton('[type=submit]')
+  })
+
+  this.When(/^the user press remove button from the first beer$/, () => {
+    this.world.server.fakeRemoveBeerResponse('beer_01')
+    clickOnΒutton('button=Remove Beer')
+  })
+
+  this.When(/^accept modal dialog with question message$/, () => {
+    clickOnΒutton('button=Accept')
   })
 
   this.Then(/^the first beer of the list is "([^"]*)"$/, (beer) => {
