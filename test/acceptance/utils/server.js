@@ -61,6 +61,16 @@ const fakeServer = () => {
           res.send(response)
         }
       })
+    },
+    fakeAddBeerResponse() {
+      this.fakeResponse({
+        method: 'post',
+        path: '/api/beers',
+        middleware: (req, res) => {
+          const response = require('./responses/add_beer.json')
+          res.send(response)
+        }
+      })
     }
   }
 }

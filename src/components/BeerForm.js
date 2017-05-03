@@ -13,8 +13,8 @@ class BeerForm extends Component {
     return (
       <div>
         <form action="#" onSubmit={(e) => this.handleSubmit(e)}>
-          <input type="text" ref="name" required="required" />
-          <input type="text" ref="graduation" required="required" />
+          <input type="text" ref="name" name="beerName" required="required" />
+          <input type="text" ref="graduation" name="beerGraduation" required="required" />
           <input type="submit" value={btnText} disabled={this.props.loading} />
         </form>
       </div>
